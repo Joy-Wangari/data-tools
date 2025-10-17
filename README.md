@@ -1,28 +1,5 @@
-# data-tools
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
+# DATA TOOLS FINAL PROJECT-MUSIC STREAMING SYSTEM
 
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
@@ -41,7 +18,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -59,11 +35,11 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 A Music Streaming System <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+> A database system for mananging online music streaming services including tables such as artists, songs and albums for easy access for online users. 
 
-**[your_project__name]** is a...
+**Music Streaming System** is a database developed on PostgreSQL Development Platform to be used for managing online music streaming platforms and tracking artists, songs and albums. 
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -98,21 +74,12 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Artist Management** - View artist's profile with genre, country and debut year
+- **Album Management** - Browse albums by release date, artist or genre
+- **Search and Discovery** - Advanced search by artist, genre, release date or album
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project only if available.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -126,13 +93,17 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-<!--
-Example command:
+ - Set up an account on Supabase 
+Example command:https://supabase.com/
 
-```sh
- gem install rails
-```
- -->
+ - Set up an account on GitHub to host the project
+
+ - Install or have access to PostgreSQL 
+
+ - Prior knowledge on SQL 
+
+ - Technical knowledge on database design
+
 
 ### Setup
 
