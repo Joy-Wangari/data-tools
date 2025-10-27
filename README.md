@@ -106,7 +106,9 @@ Example command:https://supabase.com/
 
 
 ### Setup
-
+1. Create a Supabase project at https://supabase.com/
+2. Clone this repository to your github
+   
 Clone this repository to your desired folder:
 
 <!--
