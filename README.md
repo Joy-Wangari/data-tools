@@ -29,7 +29,6 @@
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
@@ -110,20 +109,18 @@ Example command:https://supabase.com/
 2. Clone this repository to your github
    
 Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
 ```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+https://github.com/JoyWangari/data-tools.git
+cd data-tools
 ```
---->
 
 ### Install
 
 Install this project with:
-
+1. Open Supabase dasboard
+2. Navigate to the 3rd incom on top left - SQL Editor
+3. Copy and paste contents of the file schema.sql
+4. Select RUN CTRL to create tables and execute commands such as retrieving information. 
 <!--
 Example command:
 
@@ -136,31 +133,47 @@ Example command:
 ### Usage
 
 To run the project, execute the following command:
+1. Open Supabase SQL Editor
+Go to https://app.supabase.com, your project, SQL Editor
+2. Run the schema file schema.sql
+3. Run the sample data inserts
 
-<!--
-Example command:
-
-```sh
-  rails server
+```-- schema.sql
+CREATE SCHEMA Music;
+CREATE TABLE Music.Artists (...);
+CREATE TABLE Music.Albums (...);
+CREATE TABLE Music.Songs (...);
 ```
---->
+
 
 ### Run tests
 
 To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
+1. To find all artists 
 ```
---->
-
+SELECT *
+FROM Music.Artists;
+```
+2. To find all information on Gospel songs
+```
+SELECT *
+ FROM Music.Songs
+WHERE genre = 'Gospel';
+```
+3. To find artist and song tiltle
+```
+SELECT a.rtist_name, s.song_title
+FROM Music.Artists a
+JOIN Music.Songs s ON a.artist_id = s.artist_id;
+```
 ### Deployment
 
 You can deploy this project using:
-
+1. Go to Supabase
+2. Open the project - SQL Editor
+3. Export your schema to schema.sql
+4. Commit and push to GitHub.
+5. Add Supabse project link in your Readme.md 
 <!--
 Example:
 
@@ -179,15 +192,9 @@ Example:
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@JoyWangari](https://github.com/JoyWangari)
+- LinkedIn: [Joy Njeri](https://linkedin.com/in/joy-njeri)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -197,9 +204,9 @@ Example:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Users Table** - Contains details of all users, name and email, links users to playlists 
+- [ ] **Playlists Table** - Allows users to create different playlists based on preferences
+- [ ] **Song Ratings** - Allows users to rate or like songs 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,19 +224,14 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> Support this project that can be used to manage music streaming services
 
-If you like this project...
+If you like this project, please give it a star ⭐️ and follow this account 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,13 +241,13 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **How does your database schema handle relationships between users, albums and songs?**
 
-  - [Answer_1]
+  - The database uses a relational structure where foreign keys define connections between tables to ensure data consistency and avoid duplication.
 
-- **[Question_2]**
+- **How can this project be extended into a full stack music streaming app?**
 
-  - [Answer_2]
+  - By integrating both backend and frontend technologies. Supabase for backend and React for frontend. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -255,6 +257,5 @@ I would like to thank...
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
