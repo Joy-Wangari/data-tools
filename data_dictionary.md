@@ -51,3 +51,17 @@ Each album contains multiple songs, but each song belongs to only one album.
 One Artist → Many Songs
 Artists can perform many songs directly (across albums or singles).
 
+```Artists
+│
+├── artist_id (PK)
+│
+│   1 ────< artist_id
+│
+└─────── Albums
+        │
+        ├── album_id (PK)
+        │
+        │   1 ────< album_id
+        │
+        └─────── Songs
+```
